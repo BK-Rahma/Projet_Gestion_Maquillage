@@ -45,6 +45,7 @@ src/
 ├── main.ts
 ├── main.server.ts
 └── server.ts
+
 ---
 
 ## ✨ Fonctionnalités principales
@@ -106,8 +107,11 @@ git clone https://github.com/rahmouchahd/gestion-makeup.git
 cd projet-makeup\AngularCRUD
 npm install
 ng serve
+
 ---
+
 👩‍💻 Auteur
 Projet développé dans le cadre d’un apprentissage Angular.
 Réalisé avec ❤️ par Rahma Bouchnak.
 
+---
