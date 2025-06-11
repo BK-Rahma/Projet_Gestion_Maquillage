@@ -1,0 +1,81 @@
+<nav class="navbar navbar-light bg-primary">
+    <div class="container-fluid">
+      <h1 style="color:aliceblue">Gestion des Catégories</h1>
+      <div class="d-flex">
+        <button class="btn btn-success" data-toggle="modal" data-target="#categoryModal">Ajouter Catégorie</button>
+      </div>
+    </div>
+  </nav>
+   <!-- Champ de recherche -->
+<div class="input-group mb-3">
+  <input type="text" class="form-control" placeholder="Search category..."
+  [(ngModel)]="searchTerm" (input)="filterCategory()" />
+  <div class="input-group-append">
+  <button class="btn btn-outline-secondary" type="button">Search</button>
+  </div>
+  </div>
+  <table class="table mt-3">
+    <thead>
+      <tr>
+        <th scope="col">ID</th>
+        <th scope="col">Nom de la Catégorie</th>
+        <th scope="col">Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let row of filteredCategoryData">
+        <td>{{ row.id }}</td>
+        <td>{{ row.nomcategory }}</td>
+        <td>
+          <button type="button" (click)="onEdit(row)" class="btn btn-info" data-toggle="modal" data-target="#categoryModal">
+            Modifier
+          </button>
+          <button type="button" (click)="deleteCategory(row)" class="btn btn-danger">Supprimer</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="categoryModal" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="categoryModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="categoryModalLabel">Détails de la Catégorie</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Fermer">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form [formGroup]="formValue">
+            <div class="mb-3">
+              <label for="nomcategory" class="form-label">Nom de la Catégorie</label>
+              <input type="text" class="form-control" formControlName="nomcategory" id="nomcategory">
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+          <button type="button" (click)="postCategoryDetails()" class="btn btn-primary">Ajouter</button>
+          <button type="button" (click)="updateCategory()" class="btn btn-primary">Update</button>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <nav>
+    <ul class="pagination justify-content-center">
+      <li class="page-item" [class.disabled]="currentPage === 1">
+        <a class="page-link" (click)="prevPage()">Précédent</a>
+      </li>
+      <li class="page-item" *ngFor="let page of [].constructor(totalPages); let i = index"
+          [class.active]="currentPage === i + 1">
+        <a class="page-link" (click)="goToPage(i + 1)">{{ i + 1 }}</a>
+      </li>
+      <li class="page-item" [class.disabled]="currentPage === totalPages">
+        <a class="page-link" (click)="nextPage()">Suivant</a>
+      </li>
+    </ul>
+  </nav>
+  
