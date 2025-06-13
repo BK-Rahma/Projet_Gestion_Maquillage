@@ -143,8 +143,9 @@ ng serve
 
 ---
 
-👩‍💻 Auteur
-Projet développé dans le cadre d’un apprentissage Angular.
-Réalisé avec ❤️ par Rahma Bouchnak.
+## 👩‍💻 Auteur
+
+- Projet développé dans le cadre d’un apprentissage Angular.
+- Réalisé avec ❤️ par Rahma Bouchnak.
 
 ---
