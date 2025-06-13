@@ -14,14 +14,23 @@ Il s'agit d'une plateforme permettant d'ajouter, modifier, supprimer et lier des
 src/
 
 │
+
 ├── app/
+
 │ ├── ajout-category/
+
 │ │ ├── ajout-category.component.ts
+
 │ │ ├── ajout-category.component.html
+
 │ │ ├── ajout-category.component.css
+
 │ │ ├── ajout-category.component.spec.ts
+
 │ │ └── ajout-category.modal.ts
+
 │ │
+
 │ ├── makeup-dashboard/
 │ │ ├── makeup-dashboard.component.ts
 │ │ ├── makeup-dashboard.component.html
