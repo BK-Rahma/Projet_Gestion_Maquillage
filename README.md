@@ -132,6 +132,11 @@ Ces services utilisent `HttpClient` pour interagir avec une API REST (ou des don
 
 ---
 
+## 👩‍💻 Développé par
+Rahma Bouchnak
+Projet réalisé dans le cadre d’un apprentissage Angular.
+
+---
 ## ▶️ Démarrer le projet
 
 1. Cloner le dépôt :
@@ -143,13 +148,4 @@ ng serve
 
 ---
 
-## 🎨 Design & CSS
 
-- Design centré et responsive grâce à Flexbox
-- Utilisation de **Bootstrap** pour les boutons et la mise en page
-- Style personnalisé pour :
-  - Le titre (`h2`)
-  - Les boutons (`a.btn`)
-  - L’arrière-plan avec un **dégradé rose**
-
----
