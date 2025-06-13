@@ -12,6 +12,7 @@ Il s'agit d'une plateforme permettant d'ajouter, modifier, supprimer et lier des
 ## 🧭 Structure du projet
 
 src/
+
 │
 ├── app/
 │ ├── ajout-category/
