@@ -143,9 +143,13 @@ ng serve
 
 ---
 
-## 👩‍💻 Auteur
+## 🎨 Design & CSS
 
-- Projet développé dans le cadre d’un apprentissage Angular.
-- Réalisé avec ❤️ par Rahma Bouchnak.
+- Design centré et responsive grâce à Flexbox
+- Utilisation de **Bootstrap** pour les boutons et la mise en page
+- Style personnalisé pour :
+  - Le titre (`h2`)
+  - Les boutons (`a.btn`)
+  - L’arrière-plan avec un **dégradé rose**
 
 ---
