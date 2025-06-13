@@ -115,10 +115,6 @@ Ces services utilisent `HttpClient` pour interagir avec une API REST (ou des don
 
 - Design centré et responsive grâce à Flexbox
 - Utilisation de **Bootstrap** pour les boutons et la mise en page
-- Style personnalisé pour :
-  - Le titre (`h2`)
-  - Les boutons (`a.btn`)
-  - L’arrière-plan avec un **dégradé rose**
 
 ---
 
