@@ -32,28 +32,51 @@ src/
 │ │
 
 │ ├── makeup-dashboard/
+
 │ │ ├── makeup-dashboard.component.ts
+
 │ │ ├── makeup-dashboard.component.html
+
 │ │ ├── makeup-dashboard.component.css
+
 │ │ ├── makeup-dashboard.component.spec.ts
+
 │ │ └── makeup-dashboard.modal.ts
+
 │ │
+
 │ ├── shared/
+
 │ │ └── api.service.ts
+
 │ │
+
 │ ├── app.component.ts
+
 │ ├── app.component.html
+
 │ ├── app.component.css
+
 │ ├── app.config.ts
+
 │ ├── app.routes.ts
+
 │ ├── app.config.server.ts
+
 │ ├── app.routes.server.ts
+
 │ └── app.component.spec.ts
+
 │
+
 ├── assets/
+
 ├── index.html
+
 ├── main.ts
+
 ├── main.server.ts
+
 └── server.ts
 
 ---
